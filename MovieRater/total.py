@@ -3,7 +3,7 @@ import scrapy
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 
-class movie:
+class movie(dict):
     name = ''
     imdbRating = -1
     boxOffice = -1
@@ -55,15 +55,6 @@ class imdbSpider(scrapy.Spider):
             yield{
                 'name': object.css(NAME_SELECTOR).extract_first(),
             }
-
-
-### BIG PENISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
-
-
-
-
-
-
 
 class boxOfficeSpider(scrapy.Spider):
     name = 'imdb'
@@ -158,24 +149,18 @@ class metaSpider(scrapy.Spider):
             else :
                 flag = True
 
-######################
+###################### NEW ROGER SPIDER
 
-
-
-class rogerSpider(CrawlSpider):
-    name = 'Roger Ebert'
-    allowed_domains = ['www.rogerebert.com']
-    start_urls = [
-          'https://www.rogerebert.com/movies/A'
-          'https://www.rogerebert.com/movies/B'
-    ]
-
-    rules = (
-        Rule(LinkExtractor(allow=(), restrict_css=('.next_page')),
-                callback="parse_item",
-                follow=True),
-    )
-
+class rogerSpider(scrapy.Spider):
+    name = 'roger'
+    start_urls = ['https://www.rogerebert.com/movies/A']
     def parse(self, response):
-        #print('Processing..' + response.url)
-        item_links = response.css('.large' > /detailsLink::attr(href)').extract')
+        SET_SELECTOR = '.details'
+
+        for object in response.css(SET_SELECTOR):
+                NAME_SELECTOR = 'a ::text'
+                yield{
+                    'name': object.css(NAME_SELECTOR).extract_first(),
+                    }
+
+##########################################
