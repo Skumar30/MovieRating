@@ -1,10 +1,30 @@
 import scrapy
+import os
 ### THIS FILE IS COMPLETE
 counter = 0
+numPages = 200
 class imdbSpider(scrapy.Spider):
+    
+    def stringGen():
+        toReturn = []
+        minUserrtg = 1.0
+        maxUserrtg = 1.1
+        BASE_STRING = 'https://www.imdb.com/search/title?title_type=feature&user_rating='
+        REST_OF_STRING = '&count=250&sort=alpha,asc'
+
+        while minUserrtg <10.1:
+
+            maxUserrtg = min(maxUserrtg, 10)
+            toReturn.append(BASE_STRING +(str)(minUserrtg) + ',' + (str)(maxUserrtg) + REST_OF_STRING)
+            minUserrtg += 0.2
+            maxUserrtg += 0.2
+
+        return toReturn
 
     name = 'imdb'
-    start_urls = ['https://www.imdb.com/search/title?title_type=feature&user_rating=1.0,10.0&sort=alpha,asc']
+    start_urls = stringGen()
+                
+    handle_httpstatus_list = [404]
 
     def parse(self, response):
 
@@ -17,11 +37,11 @@ class imdbSpider(scrapy.Spider):
             GENRE_SELECTOR = '.genre ::text'
             yield{
 
-                 'name': object.css(NAME_SELECTOR).extract_first(),
+                 'name': object.css(NAME_SELECTOR).extract_first().encode('utf-8'),
 
 
-                 'imdbRating': object.xpath(".//strong/text()").extract_first(),
-                 'year': object.css(YEAR_SELECTOR).extract_first().strip("()"),
+                 'imdbRating': object.xpath(".//strong/text()").extract_first().encode('utf-8'),
+                 'year': object.css(YEAR_SELECTOR).extract_first().strip("()").encode('utf-8'),
                  'genre': [x.strip() for x in object.css(GENRE_SELECTOR).extract()]
             }
 
@@ -38,3 +58,4 @@ class imdbSpider(scrapy.Spider):
                 response.urljoin(next_page),
                 callback=self.parse
             )
+
