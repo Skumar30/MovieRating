@@ -13,13 +13,13 @@ BOT_NAME = 'MovieRater'
 
 SPIDER_MODULES = ['MovieRater.spiders']
 NEWSPIDER_MODULE = 'MovieRater.spiders'
-
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36"
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'MovieRater (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -36,7 +36,7 @@ ROBOTSTXT_OBEY = True
 #COOKIES_ENABLED = False
 
 # Disable Telnet Console (enabled by default)
-#TELNETCONSOLE_ENABLED = False
+TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
 #DEFAULT_REQUEST_HEADERS = {
