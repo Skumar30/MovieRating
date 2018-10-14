@@ -10,7 +10,7 @@
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 BOT_NAME = 'MovieRater'
-
+#LOG_LEVEL = 'INFO'
 SPIDER_MODULES = ['MovieRater.spiders']
 NEWSPIDER_MODULE = 'MovieRater.spiders'
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36"
