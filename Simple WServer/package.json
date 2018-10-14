@@ -1,0 +1,11 @@
+{
+  "name": "simple-server",
+  "version": "1.0.0",
+  "description": "A simple web server",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo"
+  },
+  "author": "Andy D",
+  "license": "ISC"
+}
