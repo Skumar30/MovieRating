@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/* Ensure proper sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* Sidebar/ left column */
+.side {
+  flex: 30%; /* Set width of the sidebar */
+  background-color: grey;
+  padding: 20px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.80;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.80;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Style the Header*/
+.header {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 50px;
+    margin: 20px;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  padding: 10px;
+  background-color: black;
+  border: 2px black;
+  margin: 20px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: gold;
+  text-align: center;
+  padding: 8px;
+  border-width: 1px;
+  font-size: 20px;
+}
+
+/* Style the visited topnav links */
+.topnav a:visited {
+  color: yellow;
+  background-color: salmon;
+}
+
+/* Style the topnav links hovering */
+.topnav a:hover {
+  color: lightyellow;
+}
+
+/* Style the active topnav links */
+.topnav a:active {
+  color: fuchsia;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 4px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* Style the button */
+.btn {
+  border: nonel
+  background-color: inherit;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+}
+
+.btn:hover {background: gray}
+.home {color: white}
+
+body {
+  background-image: url("http://fungyung.com/data/out/88/63060000-popcorn-wallpapers.jpg");
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Movie Ratings For Everyone
+  </h1>
+</div>
+
+<div class="topnav">
+  <button class="home">Home</button>
+  <a href='#'> Link </a>
+  <a href='#'> Link </a>
+  <a href ='#'> Link </a>
+  <input type="text" placeholder="Search movies...">
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2> D-Class Movie </h2>
+    <p> Random words that is okay. I think it is okay? </p>
+    <p> Nope, not okay. You have to pay. </p>
+    <p> No, you. </p>
+    <p> Wow, so childish. Like Jacky. </p>
+  </div>
+  <div class="main">
+    <h2> A-Class Movie </h2>
+      <p> "The unexamined life is not worth living" - Socrates </p>
+      <p> "Whereof one cannot speak, thereof one must be silent" - Ludwig Wittgenstein </p>
+      <p> "Entities should not be multiplied unnecessarily" - William of Ockham </p>
+      <p> "The life of man (in a state of nature) is solitary, poor, nasty, brutish, and short" - Thomas Hobbes
+      <p> "I think therefore I am" ("Cogito, ergo sum") - Rene Descartes </p>
+      <p> "He who thinks great thoughts, often makes great errors" - Martin Heidegger </p>
+      <p> "We live in the best of all possible worlds" - Gottfried Wilhelm Leibniz </p>
+      <p> "What is rational is actual and what is actual is rational" - G. W. F. Hegel </p>
+      <p> "God is dead! He remains dead! And we have killed him." - Friedrich Nietzsche </p>
+      <p> "There is but one truly serious philosophical problem, and that is suicide" - Albert Camus </p>
+  </div>
+
+</body>
+</html>
