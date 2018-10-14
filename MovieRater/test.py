@@ -1,34 +1,41 @@
-from html.parser import HTMLParser
-from html.entities import name2codepoint
-import requests
+import scrapy
+import os
+### THIS FILE IS COMPLETE
+counter = 0
+class imdbSpider(scrapy.Spider):
 
-r = requests.get('https://www.metacritic.com/browse/movies/title/dvd')
+    def stringGen():
+        toReturn = []
+        minUserrtg = 1.0
+        maxUserrtg = 1.0
+        BASE_STRING = 'https://www.imdb.com/search/title?title_type=feature&user_rating='
+        REST_OF_STRING = '&count=10000&sort=alpha,asc'
 
-class MyHTMLParser(HTMLParser):
-    def handle_starttag(self, tag, attrs):
-        print("Start tag:", tag)
-        for attr in attrs:
-            print("     attr:", attr)
+        while minUserrtg <=10:
 
-    def handle_endtag(self, tag):
-        print("End tag  :", tag)
+            maxUserrtg = min(maxUserrtg, 10)
+            minUserrtg = min(minUserrtg, 10)
+            toReturn.append(BASE_STRING +(str)(minUserrtg) + ',' + (str)(maxUserrtg) + REST_OF_STRING)
+            minUserrtg += 0.1
+            maxUserrtg += 0.1
 
-    def handle_data(self, data):
-        print("Data     :", data)
+        return toReturn
 
-    def handle_comment(self, data):
-        print("Comment  :", data)
+    name = 'imdb'
+    start_urls = stringGen()
+    handle_httpstatus_list = [404]
 
-    def handle_entityref(self, name):
-        c = chr(name2codepoint[name])
-        print("Named ent:", c)
+    def parse(self, response):
 
-    def handle_charref(self, name):
-        if name.startswith('x'):
-            c = chr(int(name[1:], 16))
-        else:
-            c = chr(int(name))
-        print("Num ent  :", c)
+        SET_SELECTOR = '.lister-item-content'
+        global counter
+        for object in response.css(SET_SELECTOR):
 
-    def handle_decl(self, data):
-        print("Decl     :", data)
+            yield {
+
+            'imdbRating': object.xpath("..//strong/text()").extract_first().encode('utf-8'),
+
+            'titles': response.css("#main > div > div > div:nth-child(1) > div.desc ::text").extract_first()
+            }
+
+            break
