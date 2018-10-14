@@ -2,6 +2,7 @@ import scrapy
 import os
 ### THIS FILE IS COMPLETE
 counter = 0
+urls = ""
 class imdbSpider(scrapy.Spider):
 
     def stringGen():
@@ -20,9 +21,11 @@ class imdbSpider(scrapy.Spider):
             maxUserrtg += 0.1
 
         return toReturn
-
+    global counter
     name = 'imdb'
-    start_urls = stringGen()
+    global urls 
+    urls = stringGen()
+    start_urls = {'https://www.imdb.com/search/title?title_type=feature&user_rating=1.0&count=10000&sort=alpha,asc'}
     handle_httpstatus_list = [404]
 
     def parse(self, response):
@@ -39,3 +42,13 @@ class imdbSpider(scrapy.Spider):
             }
 
             break
+        global counter
+        counter+=1
+        global urls
+        next_page = urls[counter]
+
+        if(counter < 100):
+            yield scrapy.Request(
+                response.urljoin(next_page),
+                callback=self.parse
+            )

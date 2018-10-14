@@ -5,7 +5,12 @@ from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 letterCounter = 1
 class rogerSpider(scrapy.Spider):
-    os.remove("rogerOutput.json")
+    
+    try:
+        os.remove('../Outputs/rogerOutput.json')
+    except OSError:
+        pass
+    
     name = 'roger'
     start_urls = ['https://www.rogerebert.com/movies/A']
     def parse(self, response):
@@ -59,8 +64,8 @@ class rogerSpider(scrapy.Spider):
             })
 
         #appends to output file
-        with open('rogerOutput.json', 'a') as outfile:
-            json.dump(data, outfile)
+        with open('../Outputs/rogerOutput.json', 'a') as outfile:
+            json.dump(data, outfile, indent=2)
 
         #gets url for next page
         next_page = response.xpath("//li[contains(@class, 'next_page')]/a/@href").extract_first()
