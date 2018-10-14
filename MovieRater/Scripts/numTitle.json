@@ -1,60 +1,366 @@
 [
-{"titles": "\n         \n            47 titles\n    ", "imdbRating": "1.0"},
-{"titles": "\n         \n            29 titles\n    ", "imdbRating": "1.1"},
-{"titles": "\n         \n            47 titles\n    ", "imdbRating": "1.2"},
-{"titles": "\n         \n            46 titles\n    ", "imdbRating": "1.3"},
-{"titles": "\n         \n            64 titles\n    ", "imdbRating": "1.4"},
-{"titles": "\n         \n            61 titles\n    ", "imdbRating": "1.5"},
-{"titles": "\n         \n            75 titles\n    ", "imdbRating": "1.6"},
-{"titles": "\n         \n            86 titles\n    ", "imdbRating": "1.7"},
-{"titles": "\n         \n            112 titles\n    ", "imdbRating": "1.8"},
-{"titles": "\n         \n            132 titles\n    ", "imdbRating": "1.9"},
-{"titles": "\n         \n            141 titles\n    ", "imdbRating": "2.0"},
-{"titles": "\n         \n            167 titles\n    ", "imdbRating": "2.1"},
-{"titles": "\n         \n            249 titles\n    ", "imdbRating": "2.2"},
-{"titles": "\n         \n            223 titles\n    ", "imdbRating": "2.3"},
-{"titles": "\n         \n            262 titles\n    ", "imdbRating": "2.4"},
-{"titles": "\n         \n            293 titles\n    ", "imdbRating": "2.5"},
-{"titles": "\n         \n            305 titles\n    ", "imdbRating": "2.6"},
-{"titles": "\n         \n            388 titles\n    ", "imdbRating": "2.7"},
-{"titles": "\n         \n            493 titles\n    ", "imdbRating": "2.8"},
-{"titles": "\n         \n            477 titles\n    ", "imdbRating": "2.9"},
-{"titles": "\n         \n            498 titles\n    ", "imdbRating": "3.0"},
-{"titles": "\n         \n            529 titles\n    ", "imdbRating": "3.1"},
-{"titles": "\n         \n            697 titles\n    ", "imdbRating": "3.2"},
-{"titles": "\n         \n            700 titles\n    ", "imdbRating": "3.3"},
-{"titles": "\n         \n            818 titles\n    ", "imdbRating": "3.4"},
-{"titles": "\n         \n            897 titles\n    ", "imdbRating": "3.5"},
-{"titles": "\n         \n            1,137 titles\n    ", "imdbRating": "3.6"},
-{"titles": "\n         \n            1,034 titles\n    ", "imdbRating": "3.7"},
-{"titles": "\n         \n            1,335 titles\n    ", "imdbRating": "3.8"},
-{"titles": "\n         \n            1,165 titles\n    ", "imdbRating": "3.9"},
-{"titles": "\n         \n            1,502 titles\n    ", "imdbRating": "4.0"},
-{"titles": "\n         \n            1,553 titles\n    ", "imdbRating": "4.1"},
-{"titles": "\n         \n            1,893 titles\n    ", "imdbRating": "4.2"},
-{"titles": "\n         \n            1,803 titles\n    ", "imdbRating": "4.3"},
-{"titles": "\n         \n            2,017 titles\n    ", "imdbRating": "4.4"},
-{"titles": "\n         \n            2,110 titles\n    ", "imdbRating": "4.5"},
-{"titles": "\n         \n            2,627 titles\n    ", "imdbRating": "4.6"},
-{"titles": "\n         \n            2,482 titles\n    ", "imdbRating": "4.7"},
-{"titles": "\n         \n            3,005 titles\n    ", "imdbRating": "4.8"},
-{"titles": "\n         \n            2,671 titles\n    ", "imdbRating": "4.9"},
-{"titles": "\n         \n            3,307 titles\n    ", "imdbRating": "5.0"},
-{"titles": "\n         \n            3,250 titles\n    ", "imdbRating": "5.1"},
-{"titles": "\n         \n            4,076 titles\n    ", "imdbRating": "5.2"},
-{"titles": "\n         \n            3,867 titles\n    ", "imdbRating": "5.3"},
-{"titles": "\n         \n            4,188 titles\n    ", "imdbRating": "5.4"},
-{"titles": "\n         \n            4,316 titles\n    ", "imdbRating": "5.5"},
-{"titles": "\n         \n            4,817 titles\n    ", "imdbRating": "5.6"},
-{"titles": "\n         \n            4,887 titles\n    ", "imdbRating": "5.7"},
-{"titles": "\n         \n            5,589 titles\n    ", "imdbRating": "5.8"},
-{"titles": "\n         \n            5,242 titles\n    ", "imdbRating": "5.9"},
-{"titles": "\n         \n            5,822 titles\n    ", "imdbRating": "6.0"},
-{"titles": "\n         \n            5,835 titles\n    ", "imdbRating": "6.1"},
-{"titles": "\n         \n            6,726 titles\n    ", "imdbRating": "6.2"},
-{"titles": "\n         \n            6,187 titles\n    ", "imdbRating": "6.3"},
-{"titles": "\n         \n            6,452 titles\n    ", "imdbRating": "6.4"},
-{"titles": "\n         \n            6,262 titles\n    ", "imdbRating": "6.5"},
-{"titles": "\n         \n            6,434 titles\n    ", "imdbRating": "6.6"},
-{"titles": "\n         \n            6,023 titles\n    ", "imdbRating": "6.7"}
+{
+"titles": "\n         \n            47 titles\n    ", 
+"imdbRating": "1.0"
+}, 
+{
+"titles": "\n         \n            29 titles\n    ", 
+"imdbRating": "1.1"
+}, 
+{
+"titles": "\n         \n            47 titles\n    ", 
+"imdbRating": "1.2"
+}, 
+{
+"titles": "\n         \n            46 titles\n    ", 
+"imdbRating": "1.3"
+}, 
+{
+"titles": "\n         \n            64 titles\n    ", 
+"imdbRating": "1.4"
+}, 
+{
+"titles": "\n         \n            61 titles\n    ", 
+"imdbRating": "1.5"
+}, 
+{
+"titles": "\n         \n            75 titles\n    ", 
+"imdbRating": "1.6"
+}, 
+{
+"titles": "\n         \n            86 titles\n    ", 
+"imdbRating": "1.7"
+}, 
+{
+"titles": "\n         \n            112 titles\n    ", 
+"imdbRating": "1.8"
+}, 
+{
+"titles": "\n         \n            132 titles\n    ", 
+"imdbRating": "1.9"
+}, 
+{
+"titles": "\n         \n            141 titles\n    ", 
+"imdbRating": "2.0"
+}, 
+{
+"titles": "\n         \n            167 titles\n    ", 
+"imdbRating": "2.1"
+}, 
+{
+"titles": "\n         \n            249 titles\n    ", 
+"imdbRating": "2.2"
+}, 
+{
+"titles": "\n         \n            223 titles\n    ", 
+"imdbRating": "2.3"
+}, 
+{
+"titles": "\n         \n            262 titles\n    ", 
+"imdbRating": "2.4"
+}, 
+{
+"titles": "\n         \n            293 titles\n    ", 
+"imdbRating": "2.5"
+}, 
+{
+"titles": "\n         \n            305 titles\n    ", 
+"imdbRating": "2.6"
+}, 
+{
+"titles": "\n         \n            388 titles\n    ", 
+"imdbRating": "2.7"
+}, 
+{
+"titles": "\n         \n            493 titles\n    ", 
+"imdbRating": "2.8"
+}, 
+{
+"titles": "\n         \n            477 titles\n    ", 
+"imdbRating": "2.9"
+}, 
+{
+"titles": "\n         \n            498 titles\n    ", 
+"imdbRating": "3.0"
+}, 
+{
+"titles": "\n         \n            529 titles\n    ", 
+"imdbRating": "3.1"
+}, 
+{
+"titles": "\n         \n            697 titles\n    ", 
+"imdbRating": "3.2"
+}, 
+{
+"titles": "\n         \n            700 titles\n    ", 
+"imdbRating": "3.3"
+}, 
+{
+"titles": "\n         \n            818 titles\n    ", 
+"imdbRating": "3.4"
+}, 
+{
+"titles": "\n         \n            897 titles\n    ", 
+"imdbRating": "3.5"
+}, 
+{
+"titles": "\n         \n            1,137 titles\n    ", 
+"imdbRating": "3.6"
+}, 
+{
+"titles": "\n         \n            1,034 titles\n    ", 
+"imdbRating": "3.7"
+}, 
+{
+"titles": "\n         \n            1,335 titles\n    ", 
+"imdbRating": "3.8"
+}, 
+{
+"titles": "\n         \n            1,165 titles\n    ", 
+"imdbRating": "3.9"
+}, 
+{
+"titles": "\n         \n            1,502 titles\n    ", 
+"imdbRating": "4.0"
+}, 
+{
+"titles": "\n         \n            1,553 titles\n    ", 
+"imdbRating": "4.1"
+}, 
+{
+"titles": "\n         \n            1,893 titles\n    ", 
+"imdbRating": "4.2"
+}, 
+{
+"titles": "\n         \n            1,803 titles\n    ", 
+"imdbRating": "4.3"
+}, 
+{
+"titles": "\n         \n            2,017 titles\n    ", 
+"imdbRating": "4.4"
+}, 
+{
+"titles": "\n         \n            2,110 titles\n    ", 
+"imdbRating": "4.5"
+}, 
+{
+"titles": "\n         \n            2,627 titles\n    ", 
+"imdbRating": "4.6"
+}, 
+{
+"titles": "\n         \n            2,482 titles\n    ", 
+"imdbRating": "4.7"
+}, 
+{
+"titles": "\n         \n            3,005 titles\n    ", 
+"imdbRating": "4.8"
+}, 
+{
+"titles": "\n         \n            2,671 titles\n    ", 
+"imdbRating": "4.9"
+}, 
+{
+"titles": "\n         \n            3,307 titles\n    ", 
+"imdbRating": "5.0"
+}, 
+{
+"titles": "\n         \n            3,250 titles\n    ", 
+"imdbRating": "5.1"
+}, 
+{
+"titles": "\n         \n            4,076 titles\n    ", 
+"imdbRating": "5.2"
+}, 
+{
+"titles": "\n         \n            3,867 titles\n    ", 
+"imdbRating": "5.3"
+}, 
+{
+"titles": "\n         \n            4,188 titles\n    ", 
+"imdbRating": "5.4"
+}, 
+{
+"titles": "\n         \n            4,316 titles\n    ", 
+"imdbRating": "5.5"
+}, 
+{
+"titles": "\n         \n            4,817 titles\n    ", 
+"imdbRating": "5.6"
+}, 
+{
+"titles": "\n         \n            4,887 titles\n    ", 
+"imdbRating": "5.7"
+}, 
+{
+"titles": "\n         \n            5,589 titles\n    ", 
+"imdbRating": "5.8"
+}, 
+{
+"titles": "\n         \n            5,242 titles\n    ", 
+"imdbRating": "5.9"
+}, 
+{
+"titles": "\n         \n            5,822 titles\n    ", 
+"imdbRating": "6.0"
+}, 
+{
+"titles": "\n         \n            5,835 titles\n    ", 
+"imdbRating": "6.1"
+}, 
+{
+"titles": "\n         \n            6,726 titles\n    ", 
+"imdbRating": "6.2"
+}, 
+{
+"titles": "\n         \n            6,187 titles\n    ", 
+"imdbRating": "6.3"
+}, 
+{
+"titles": "\n         \n            6,452 titles\n    ", 
+"imdbRating": "6.4"
+}, 
+{
+"titles": "\n         \n            6,262 titles\n    ", 
+"imdbRating": "6.5"
+}, 
+{
+"titles": "\n         \n            6,434 titles\n    ", 
+"imdbRating": "6.6"
+}, 
+{
+"titles": "\n         \n            6,023 titles\n    ", 
+"imdbRating": "6.7"
+},
+{
+"titles": "\n         \n            6,786 titles\n    ", 
+"imdbRating": "6.8"
+},
+{
+"titles": "\n         \n            5,712 titles\n    ", 
+"imdbRating": "6.9"
+},
+{
+"titles": "\n         \n            6,105 titles\n    ", 
+"imdbRating": "7.0"
+},
+{
+"titles": "\n         \n            5,951 titles\n    ", 
+"imdbRating": "7.1"
+},
+{
+"titles": "\n         \n            6,005 titles\n    ", 
+"imdbRating": "7.2"
+},
+{
+"titles": "\n         \n            4,272 titles\n    ", 
+"imdbRating": "7.3"
+},
+{
+"titles": "\n         \n            4,007 titles\n    ", 
+"imdbRating": "7.4"
+},
+{
+"titles": "\n         \n            3,345 titles\n    ", 
+"imdbRating": "7.5"
+},
+{
+"titles": "\n         \n            3,243 titles\n    ", 
+"imdbRating": "7.6"
+},
+{
+"titles": "\n         \n            2,632 titles\n    ", 
+"imdbRating": "7.7"
+},
+{
+"titles": "\n         \n            2,578 titles\n    ", 
+"imdbRating": "7.8"
+},
+{
+"titles": "\n         \n            1,749 titles\n    ", 
+"imdbRating": "7.9"
+},
+{
+"titles": "\n         \n            1,974 titles\n    ", 
+"imdbRating": "8.0"
+},
+{
+"titles": "\n         \n            1,434 titles\n    ", 
+"imdbRating": "8.1"
+},
+{
+"titles": "\n         \n            1,561 titles\n    ", 
+"imdbRating": "8.2"
+},
+{
+"titles": "\n         \n            1,037 titles\n    ", 
+"imdbRating": "8.3"
+},
+{
+"titles": "\n         \n            959 titles\n    ", 
+"imdbRating": "8.4"
+},
+{
+"titles": "\n         \n            772 titles\n    ", 
+"imdbRating": "8.5"
+},
+{
+"titles": "\n         \n            779 titles\n    ", 
+"imdbRating": "8.6"
+},
+{
+"titles": "\n         \n            535 titles\n    ", 
+"imdbRating": "8.7"
+},
+{
+"titles": "\n         \n            536 titles\n    ", 
+"imdbRating": "8.8"
+},
+{
+"titles": "\n         \n            338 titles\n    ", 
+"imdbRating": "8.9"
+},
+{
+"titles": "\n         \n            361 titles\n    ", 
+"imdbRating": "9.0"
+},
+{
+"titles": "\n         \n            160 titles\n    ", 
+"imdbRating": "9.1"
+},
+{
+"titles": "\n         \n            210 titles\n    ", 
+"imdbRating": "9.2"
+},
+{
+"titles": "\n         \n            123 titles\n    ", 
+"imdbRating": "9.3"
+},
+{
+"titles": "\n         \n            75 titles\n    ", 
+"imdbRating": "9.4"
+},
+{
+"titles": "\n         \n            833 titles\n    ", 
+"imdbRating": "9.5"
+},
+{
+"titles": "\n         \n            39 titles\n    ", 
+"imdbRating": "9.6"
+},
+{
+"titles": "\n         \n            20 titles\n    ", 
+"imdbRating": "9.7"
+},
+{
+"titles": "\n         \n            10 titles\n    ", 
+"imdbRating": "9.8"
+},
+{
+"titles": "\n         \n            3 titles\n    ", 
+"imdbRating": "9.9"
+},
+{
+"titles": "\n         \n            8 titles\n    ", 
+"imdbRating": "10.0",
+}
 ]
